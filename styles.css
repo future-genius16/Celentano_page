@@ -27,20 +27,31 @@ header {
 .music ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .music ul li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 2px 2px 10px gray;
+    text-align: center;
 }
 
 .music ul li img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+    width: 100%;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.music ul li h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
 }
 
 .movie-list {
@@ -120,5 +131,14 @@ button:hover {
     .gallery-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .music ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .music ul li {
+        width: 80%;
     }
 }
