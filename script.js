@@ -7,6 +7,8 @@ document.getElementById("showFact").addEventListener("click", function () {
         "He was also a successful television host in Italy during the 1970s and 80s.",
         "Adriano Celentano’s famous hit 'Azzurro' became a symbol of Italian popular music."
     ];
+
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
+
     document.getElementById("factDisplay").textContent = randomFact;
 });
