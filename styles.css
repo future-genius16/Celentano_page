@@ -121,7 +121,6 @@ button:hover {
     background-color: #c0392b;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .movie-list {
         flex-direction: column;
